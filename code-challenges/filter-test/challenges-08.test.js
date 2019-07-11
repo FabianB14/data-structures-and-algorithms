@@ -42,6 +42,8 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  const results = arr.filter(val => !forbiddenValues.includes(val))
+  return results;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,6 +87,8 @@ const snorlaxData = {
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
   // Solution code here...
+  const results = arr.filter((val, idx) => arr[idx].baseStat > minBaseStat)
+  return results;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -97,6 +101,14 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 
 const getStatName = (arr, minBaseStat) => {
   // Solution code here...
+  
+  const results = arr.filter((val, idx) => arr[idx].baseStat > minBaseStat)
+  const modResults =results.map(val => {
+    return val.name
+  })
+  
+
+  return modResults;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -197,7 +209,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-describe('Testing challenge 3', () => {
+xdescribe('Testing challenge 3', () => {
   const firstNums = [1, 2, 3];
   const secondNums = [1, 2, 3, 4];
 
@@ -232,7 +244,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return the name of the stats that exceed that maximum', () => {
     expect(getStatName(snorlaxData.stats, 50)).toStrictEqual([ 'special-defense', 'special-attack' ]);
     expect(getStatName(snorlaxData.stats, 50).length).toStrictEqual(2);

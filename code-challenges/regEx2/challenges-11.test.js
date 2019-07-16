@@ -32,7 +32,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 
 const validateEmail = (email) => {
   // Solution code here...
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+  return /^\w+([\.-]?\w+)@\w+([\.-]?\w+)*(\.\w{3})+$/.test(email)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -41,15 +41,15 @@ CHALLENGE 3
 Write a function named validatePhoneNumber that accepts a phone number and determines if it is valid.
 
 Acceptable formats include:
- - (555) 555-5555
- - (555)555 5555
- - 555 555-5555
- - 555-5555555
- - 555-555 5555
- - 555-555-5555
- - 555 555 5555
- - 555555-5555
- - 5555555555
+ (555) 555-5555
+ (555)555 5555
+  555 555-5555
+  555-5555555
+  555-555 5555
+  555-555-5555
+  555 555 5555
+  555555-5555
+  5555555555
 
 Your function should include a single regular expression pattern that matches any of these formats.
 
@@ -58,6 +58,7 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
+  return /^(\d{3}|\(\d{3}\))(\s|\-?)\d{3}(\s|\-)?\d{4}$/.test(phoneNumber)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,6 +72,14 @@ findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>'])
 
 const findTagNames = elements => {
   // Solution code here...
+  // let regex = /<\/\w+>/
+  // elements.map(element => {
+  //   const matched = element.match(regex);
+  //   const mappedMatach = matched.map(item =>{
+  //     return item.substr(1,item.length -2)
+  //   })
+  //   return mappedMatach
+  // })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,7 +105,7 @@ xdescribe('Testing challenge 1', () => {
   });
 });
 
-describe('Testing challenge 2', () => {
+xdescribe('Testing challenge 2', () => {
   test('It should match a basic email', () => {
     expect(validateEmail('joe@codefellows.com')).toBeTruthy();
   });
@@ -150,7 +159,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return the closing tags', () => {
     expect(findTagNames(['<h1>Hello, world!</h1>', '<p>Welcome to my site</p>'])).toStrictEqual([ '/h1', '/p' ]);
   });

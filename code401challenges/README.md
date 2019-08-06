@@ -6,3 +6,6 @@ This function will be reversing an array in place modifing the same array.
 I used a while loop to complete this feature.
 I also used one temp variable.
 
+![](images/whiteboard01.jpg)
+
+

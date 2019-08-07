@@ -15,6 +15,6 @@ public class ArrayShiftTest {
         int num2 = 4;
         int num = 3;
         ArrayShift testArrayShift = new ArrayShift();
-        Assert.assertEquals(testArrayShift.arrayShift(arr,3), expectedArr);
+        assertArrayEquals("testing an array ", new int[]{1,2,3,4,5}, testArrayShift.arrayShift(new int[]{1,2,4,5},num));
     }
 }

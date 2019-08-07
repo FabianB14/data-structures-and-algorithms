@@ -8,7 +8,7 @@ I also used one temp variable.
 
 ![](images/whiteboard01.jpg)
 
-#Seconf coding challenge
+#Second coding challenge
 This is a function that will insert a integer into the center of an array
 
 

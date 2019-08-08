@@ -15,6 +15,6 @@ This is a function that will insert a integer into the center of an array
 
 
 #Second Coding Challenge
-![](images/whiteboard03.jpg)
+![](images/whiteboard3.jpg)
 
 

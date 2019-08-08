@@ -14,7 +14,8 @@ This is a function that will insert a integer into the center of an array
 
 
 
-#Second Coding Challenge
+#Third Coding Challenge
+BinarySearch
 ![](images/whiteboard3.jpg)
 
 

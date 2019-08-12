@@ -7,3 +7,5 @@ data-structures-and-algorithmsAfter lecture, get together with your partner and 
 This is the link for the 301 challenges: https://github.com/FabianB14/data-structures-and-algorithms/tree/master/code-challenges
 
 This is the link for the 401 challenges: https://github.com/FabianB14/data-structures-and-algorithms/tree/master/code401challenges
+
+This is the link for the linked list lab https://github.com/FabianB14/data-structures-and-algorithms/blob/master/data-structures-and-algorithms/linked_list/README.md

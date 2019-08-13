@@ -31,6 +31,38 @@ public class LinkedListTest {
         for(int i = 1; i <= 10; i++ ){
             linked.insert(i);
         }
-        assertEquals("this should return a string equal to all the values of the linked list", " 10 9 8 7 6 5 4 3 2 1", linked.toString());
+        assertEquals("this should return a string equal to all the values of the linked list", "10 9 8 7 6 5 4 3 2 1 ", linked.toString());
+    }
+
+    @Test
+    public void testAppend() {
+        LinkedList linked  = new LinkedList();
+        for(int i = 1; i <= 10; i++ ){
+            linked.insert(i);
+        }
+        linked.append(11);
+        assertTrue("this should be true", linked.compareAppend(11));
+        assertFalse("this should be true", linked.compareAppend(12));
+    }
+
+    @Test
+    public void insertBefore() {
+        LinkedList linked  = new LinkedList();
+        for(int i = 1; i <= 10; i++ ){
+            linked.insert(i);
+        }
+        linked.insertBefore(5,30);
+        assertTrue("this should be true", linked.compareInsertBefore(5,30));
+
+    }
+
+    @Test
+    public void insertAfter() {
+        LinkedList linked  = new LinkedList();
+        for(int i = 1; i <= 10; i++ ){
+            linked.insert(i);
+        }
+        linked.insertBefore(5,30);
+        assertTrue("this should be true", linked.compareInsertBefore(5,30));
     }
 }

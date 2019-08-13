@@ -27,7 +27,7 @@ public class LinkedList <T> {
         Node node = this.head;
         String newString = "";
         while (node != null && this.head != null){
-           newString += " "+ Integer.toString((Integer) node.value);
+           newString +=  node.value + " ";
             node = node.next;
         }
         return newString;
@@ -37,6 +37,90 @@ public class LinkedList <T> {
             return (T) node.value;
         }
         return (T) node;
+    }
+    public void append(T value){
+        Node current = this.head;
+        Node newNode = new Node(value,null);
+        if(this.head == null){
+            this.head = newNode;
+        }else {
+            while (current != null) {
+                if (current.next == null) {
+                    current.next = newNode;
+                    break;
+                }
+                current = current.next;
+            }
+        }
+    }
+
+    public void insertBefore(T value, T newValue){
+        Node current = this.head;
+        Node newNode = new Node(newValue,null);
+        if(this.head.value == value){
+            newNode.next = this.head;
+            this.head = newNode;
+        }
+        else {
+            while (current != null && current.next != null) {
+                if (current.next.value == value) {
+                    newNode.next = current.next;
+                    current.next = newNode;
+                    break;
+                }
+                current = current.next;
+            }
+        }
+
+    }
+    public void insertAfter(T value, T newValue){
+        Node current = this.head;
+        Node newNode = new Node(newValue,null);
+        if(this.head.value == value){
+            this.head.next = newNode;
+        }
+        else {
+            while (current != null && current.next != null) {
+                if (current.value == value) {
+                    newNode.next = current.next;
+                    current.next = newNode;
+                    break;
+                }
+                current = current.next;
+            }
+        }
+    }
+
+    public boolean compareAppend(T value){
+        Node current = this.head;
+        while(current != null && current.next != null){
+            if(current.next.value == value){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    public boolean compareInsertBefore(T value, T newValue){
+        Node current = this.head;
+        while(current != null && current.next != null){
+            if(current.next.next.value == value && current.next.value == newValue){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+    public boolean compareInsertAfter(T value, T newValue){
+        Node current = this.head;
+        while(current.next != null){
+            if(current.next.next.value == newValue && current.next.value == value){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
     }
 }
 

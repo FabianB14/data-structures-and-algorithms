@@ -18,4 +18,4 @@ a string representing all the values in the Linked List.
 
 Image of the white boarding process
 
-![](images/whiteboard3.jpg)
+![](images/whiteboard4.jpg)

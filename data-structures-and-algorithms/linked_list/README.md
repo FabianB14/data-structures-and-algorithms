@@ -15,3 +15,7 @@ value exists as a Node’s value somewhere within the list.
 ##Forth feature
 Define a method called toString (or __str__ in Python) which takes in no arguments and returns 
 a string representing all the values in the Linked List.
+
+Image of the white boarding process
+
+![](images/whiteboard3.jpg)

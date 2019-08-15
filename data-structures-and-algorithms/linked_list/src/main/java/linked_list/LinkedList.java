@@ -128,6 +128,7 @@ public class LinkedList <T> {
         }
         return false;
     }
+
     public int fromKth(int  kth){
         Node current = this.head;
         Node kthCurrent = this.head;
@@ -148,6 +149,7 @@ public class LinkedList <T> {
         }
         return Integer.parseInt("Exception");
     }
+
     public static LinkedList linkedListMerge(LinkedList linkedListOne, LinkedList linkedListTwo){
             Node currentOne = linkedListOne.head;
             Node currentTwo = linkedListTwo.head;

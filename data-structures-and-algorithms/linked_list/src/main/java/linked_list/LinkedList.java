@@ -128,7 +128,7 @@ public class LinkedList <T> {
         }
         return false;
     }
-    public
+    
     public static LinkedList linkedListMerge(LinkedList linkedListOne, LinkedList linkedListTwo){
             Node currentOne = linkedListOne.head;
             Node currentTwo = linkedListTwo.head;

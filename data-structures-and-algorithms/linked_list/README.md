@@ -20,5 +20,5 @@ Image of the white boarding process
 
 ## This is the Kth method
 ![](../../images/whiteboard4.jpg)
-
+## This for the merge method
 ![](../../images/whiteboard5.jpg)

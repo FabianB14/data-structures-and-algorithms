@@ -18,4 +18,7 @@ a string representing all the values in the Linked List.
 
 Image of the white boarding process
 
+## This is the Kth method
 ![](../../images/whiteboard4.jpg)
+
+![](../../images/whiteboard5.jpg)

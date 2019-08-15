@@ -65,4 +65,17 @@ public class LinkedListTest {
         linked.insertBefore(5,30);
         assertTrue("this should be true", linked.compareInsertBefore(5,30));
     }
+
+    @Test
+    public void linkedListMerge() {
+        LinkedList linked  = new LinkedList();
+        LinkedList linked2 = new LinkedList();
+        for(int i = 1; i <= 10; i++ ) {
+            linked.insert(i);
+            linked2.insert(i + 10);
+        }
+            LinkedList mergedList =  LinkedList.linkedListMerge(linked,linked2);
+            assertEquals("this should equal the correct merge output","10 20 9 19 8 18 7 17 6 16 5 15 4 14 3 13 2 12 1 ", mergedList.toString());
+
+    }
 }

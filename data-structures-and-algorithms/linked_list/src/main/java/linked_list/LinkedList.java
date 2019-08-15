@@ -2,14 +2,17 @@ package linked_list;
 
 public class LinkedList <T> {
     Node head;
+    int length;
 
     public LinkedList(){
         this.head = null;
+        this.length = 0;
     }
 
     public void insert(T value){
         Node newNode = new Node(value,this.head );
         this.head = newNode;
+        this.length++;
     }
     public boolean includes(T value){
         Node node = this.head;
@@ -52,6 +55,7 @@ public class LinkedList <T> {
                 current = current.next;
             }
         }
+        this.length++;
     }
 
     public void insertBefore(T value, T newValue){
@@ -71,6 +75,7 @@ public class LinkedList <T> {
                 current = current.next;
             }
         }
+        this.length++;
 
     }
     public void insertAfter(T value, T newValue){
@@ -89,6 +94,7 @@ public class LinkedList <T> {
                 current = current.next;
             }
         }
+        this.length++;
     }
 
     public boolean compareAppend(T value){
@@ -121,6 +127,29 @@ public class LinkedList <T> {
             current = current.next;
         }
         return false;
+    }
+    public
+    public static LinkedList linkedListMerge(LinkedList linkedListOne, LinkedList linkedListTwo){
+            Node currentOne = linkedListOne.head;
+            Node currentTwo = linkedListTwo.head;
+            Node pointerOne = linkedListOne.head.next;
+            Node pointerTwo = linkedListTwo.head.next;
+        if(currentOne == null){
+            return linkedListTwo;
+        }
+        if(currentTwo == null){
+            return linkedListOne;
+        }
+        while (pointerOne != null || pointerTwo != null){
+            currentTwo.next = currentOne.next;
+            currentOne.next = currentTwo;
+            currentTwo = pointerTwo;
+            currentOne = pointerOne;
+            pointerOne = pointerOne.next;
+            pointerTwo = pointerTwo.next;
+        }
+        System.out.println(linkedListOne.length);
+        return linkedListOne;
     }
 }
 

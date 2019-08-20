@@ -34,9 +34,16 @@ Enqueue which will add a node to the queue
 Dequeue which will remove a node from in the order that node was added to the queue
 Peek which will look at the node the node that is first in the queue
 
+##Seventh feature
+I created a new class PseudoQueue class that has to instance variables of Stacks 
+
+Using the two stacks he functionality of a Queue class was implemented
+
 Image of the white boarding process
 
 ## This is the Kth method
 ![](../../images/whiteboard4.jpg)
 ## This for the merge method
 ![](../../images/whiteboard5.jpg)
+## This is for the PseudoQueue Class
+![](../../images/whiteboard6.jpg)

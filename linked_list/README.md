@@ -46,4 +46,4 @@ Image of the white boarding process
 ## This for the merge method
 ![](../../images/whiteboard5.jpg)
 ## This is for the PseudoQueue Class
-![](../../images/whiteboard5.jpg)
+![](../../images/whiteboard6.jpg)

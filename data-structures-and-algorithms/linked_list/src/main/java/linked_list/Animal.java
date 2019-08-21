@@ -2,10 +2,17 @@ package linked_list;
 
 public class Animal {
     String name;
-    String type;
+    String breed;
+    Animal next;
 
-    public Animal(String name, String type){
-        this.name = name;
-        this.type = type;
+    public Animal(){
+        this.next = null;
+
+    }
+
+    public Animal(String name, String Breed) {
+    }
+
+    public Animal(String name) {
     }
 }

@@ -39,6 +39,12 @@ I created a new class PseudoQueue class that has to instance variables of Stacks
 
 Using the two stacks he functionality of a Queue class was implemented
 
+##Animal Shelter Feature
+You are able to enter in animals and get the specific a type of animal out that was first in.
+
+##MultiBracket Validation
+You are able to enter in a string  
+
 Image of the white boarding process
 
 ## This is the Kth method
@@ -47,3 +53,7 @@ Image of the white boarding process
 ![](../../images/whiteboard5.jpg)
 ## This is for the PseudoQueue Class
 ![](../../images/whiteboard6.jpg)
+## This is for the Animal Shelter
+![](../../images/whiteboard7.jpg)
+## This is for the MultiBracket
+![](../../images/whiteboard8.jpg)

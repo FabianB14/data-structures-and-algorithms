@@ -41,29 +41,6 @@ public class Tree {
         return valueList;
     }
 
-    public TNode addRecursive(TNode current, int value) {
-        if (current == null) {
-            return new TNode(value);
-        }
-
-        if (current.value > value) {
-            current.left = addRecursive(current.left, value);
-        } else if (current.value < value) {
-            current.right = addRecursive(current.right, value);
-        } else {
-            // value already exists
-            return current;
-        }
-        this.length++;
-        return current;
-    }
-    public boolean contains(int value){
-        ArrayList<Integer> valueList = new ArrayList<>();
-        this.inOrder(valueList,this.root);
-
-
-        return valueList.contains(value);
-    }
     public String toString(ArrayList<Integer> valueList){
         String newString = "";
         for(int i = 0; i < valueList.size(); i++){

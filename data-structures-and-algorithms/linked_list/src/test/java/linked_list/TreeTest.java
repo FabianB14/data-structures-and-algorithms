@@ -10,34 +10,41 @@ import static org.junit.Assert.*;
 public class TreeTest {
 
     Tree newTree;
-    ArrayList<Integer> valueList;
+    ArrayList<Integer> valueList = new ArrayList<>();
     @Before
     public void setUp(){
-        newTree = new Tree();
-        TNode root = new TNode(0);
-        newTree.root = root;
-        for(int i = 1; i < 10; i++){
-            newTree.addRecursive(newTree.root,i);
-        }
-        valueList = new ArrayList<>();
+        TNode root = new TNode(5);
+        newTree = new Tree(root);
+        newTree.addRecursive(newTree.root,6);
+        newTree.addRecursive(newTree.root,7);
+        newTree.addRecursive(newTree.root,8);
+        newTree.addRecursive(newTree.root,9);
+        newTree.addRecursive(newTree.root,10);
+        newTree.addRecursive(newTree.root,1);
+        newTree.addRecursive(newTree.root,2);
+        newTree.addRecursive(newTree.root,3);
+        newTree.addRecursive(newTree.root,4);
+
+
+
     }
 
     @Test
     public void preOrder() {
         newTree.preOrder(valueList,newTree.root);
-        assertEquals("this should be the preOrder list","0 1 3 4 7 8 2 5 6 9 ", newTree.toString(valueList));
+        assertEquals("this should be the preOrder list","5 4 3 2 1 6 7 8 9 10  ", newTree.toString(valueList));
     }
 
     @Test
     public void inOrder() {
         newTree.inOrder(valueList,newTree.root);
-        assertEquals("this should be the preOrder list","1 3 4 7 8 0 2 5 6 9 ", newTree.toString(valueList));
+        assertEquals("this should be the preOrder list","1 2 3 4 5 6 7 8 9 10 ", newTree.toString(valueList));
     }
 
     @Test
     public void postOrder() {
         newTree.postOrder(valueList,newTree.root);
-        assertEquals("this should be the preOrder list","1 3 4 7 8 2 5 6 9 0 ", newTree.toString(valueList));
+        assertEquals("this should be the preOrder list","1 2 3 4 6 7 8 9 10 5 ", newTree.toString(valueList));
     }
 
     @Test

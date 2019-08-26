@@ -5,8 +5,12 @@ import java.util.ArrayList;
 public class Tree {
     TNode root;
     int length;
+
     public Tree(){
        this.root = null;
+    }
+    public Tree(TNode root){
+        this.root = root;
     }
     public static ArrayList<Integer> preOrder( ArrayList<Integer> valueList, TNode node){
         if(node == null){
@@ -42,9 +46,9 @@ public class Tree {
             return new TNode(value);
         }
 
-        if (length % 2 == 0) {
+        if (current.value > value) {
             current.left = addRecursive(current.left, value);
-        } else if (length % 2 != 0) {
+        } else if (current.value < value) {
             current.right = addRecursive(current.right, value);
         } else {
             // value already exists

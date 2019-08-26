@@ -43,7 +43,12 @@ Using the two stacks he functionality of a Queue class was implemented
 You are able to enter in animals and get the specific a type of animal out that was first in.
 
 ##MultiBracket Validation
-You are able to enter in a string  
+You are able to enter in a string 
+
+## BinaryTree and Binary Search Tree
+Created the BT and the BST classes
+I've added the preorder, inorder and postorder methods
+I've aslo added a add and comtains method
 
 Image of the white boarding process
 

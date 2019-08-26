@@ -10,9 +10,15 @@ import static org.junit.Assert.*;
 public class TreeTest {
 
     Tree newTree;
+    Tree newTree2;
     ArrayList<Integer> valueList = new ArrayList<>();
     @Before
     public void setUp(){
+        Tree newTreeNull = new Tree();
+        TNode root2 = new TNode(2);
+        newTree2 = new Tree(root2);
+        newTree2.addRecursive(newTree2.root,1);
+        newTree2.addRecursive(newTree2.root,3);
         TNode root = new TNode(5);
         newTree = new Tree(root);
         newTree.addRecursive(newTree.root,6);
@@ -24,8 +30,6 @@ public class TreeTest {
         newTree.addRecursive(newTree.root,2);
         newTree.addRecursive(newTree.root,3);
         newTree.addRecursive(newTree.root,4);
-
-
 
     }
 
@@ -49,6 +53,10 @@ public class TreeTest {
 
     @Test
     public void contains() {
+
+        System.out.println(newTree2.root.value);
+        System.out.println(newTree2.root.left.value);
+        System.out.println(newTree2.root.right.value);
         assertTrue("this should be true", newTree.contains(8));
         assertFalse("this should be false",newTree.contains(24));
     }

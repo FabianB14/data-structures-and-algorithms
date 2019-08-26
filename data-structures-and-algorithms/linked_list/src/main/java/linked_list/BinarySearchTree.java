@@ -10,5 +10,5 @@ public class BinarySearchTree extends Tree{
     public BinarySearchTree(TNode root){
         this.root = root;
     }
-    
+
 }

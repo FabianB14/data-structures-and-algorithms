@@ -1,9 +1,9 @@
 package linked_list;
 
 public class TNode {
-    int value;
-    TNode left;
-    TNode right;
+    public Object value;
+    public TNode left;
+    public TNode right;
 
 
     public TNode(int value){

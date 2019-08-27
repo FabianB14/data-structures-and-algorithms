@@ -17,9 +17,9 @@ public class BinarySearchTree extends Tree{
             return new TNode(value);
         }
 
-        if (current.value > value) {
+        if ((int)current.value > value) {
             current.left = addRecursive(current.left, value);
-        } else if (current.value < value) {
+        } else if ((int)current.value < value) {
             current.right = addRecursive(current.right, value);
         } else {
             // value already exists
@@ -28,7 +28,7 @@ public class BinarySearchTree extends Tree{
         return current;
     }
     public boolean contains(int value){
-        ArrayList<Integer> valueList = new ArrayList<>();
+        ArrayList<Object> valueList = new ArrayList<>();
         this.inOrder(valueList,this.root);
 
 

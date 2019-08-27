@@ -11,7 +11,7 @@ public class TreeTest {
 
     BinarySearchTree newTree;
     BinarySearchTree newTree2;
-    ArrayList<Integer> valueList = new ArrayList<>();
+    ArrayList<Object> valueList = new ArrayList<>();
     @Before
     public void setUp(){
         Tree newTreeNull = new BinarySearchTree();

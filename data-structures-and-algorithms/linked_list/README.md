@@ -67,4 +67,4 @@ Image of the white boarding process
 ## This is for the MultiBracket
 ![](../../images/whiteboard8.jpg)
 ## This is for FizzBuzz
-![](../../images/whiteboard8.jpg)
+![](../../images/whiteboard9.jpg)

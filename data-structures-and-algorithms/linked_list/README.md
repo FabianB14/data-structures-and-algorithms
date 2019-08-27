@@ -50,6 +50,10 @@ Created the BT and the BST classes
 I've added the preorder, inorder and postorder methods
 I've aslo added a add and comtains method
 
+## FizzBuzz
+Created a method  that would take the numbers divisiable by 3,5 and 3&5
+You will be able to pass a Binary Tree to fizzbuzz. Recursively fizzbuzz will replace the divisables and return the tree
+
 Image of the white boarding process
 
 ## This is the Kth method
@@ -61,4 +65,6 @@ Image of the white boarding process
 ## This is for the Animal Shelter
 ![](../../images/whiteboard7.jpg)
 ## This is for the MultiBracket
+![](../../images/whiteboard8.jpg)
+## This is for FizzBuzz
 ![](../../images/whiteboard8.jpg)

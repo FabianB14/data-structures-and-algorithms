@@ -41,4 +41,10 @@ public class Queue <T> extends LinkedList{
         }
         return (T) this.front.value;
     }
+    public boolean isEmpty(){
+        if(this.front == null){
+            return true;
+        }
+        return false;
+    }
 }

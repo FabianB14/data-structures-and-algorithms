@@ -1,6 +1,8 @@
-package breadth;
+package linked_list.breadth;
 
-import linked_list.*;
+import linked_list.Queue;
+import linked_list.TNode;
+import linked_list.Tree;
 
 import java.util.ArrayList;
 

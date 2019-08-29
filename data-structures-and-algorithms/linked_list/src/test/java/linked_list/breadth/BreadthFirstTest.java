@@ -1,6 +1,5 @@
-package breadth;
+package linked_list.breadth;
 
-import linked_list.Node;
 import linked_list.TNode;
 import linked_list.Tree;
 import org.junit.Before;
@@ -40,5 +39,9 @@ public class BreadthFirstTest {
     @Test
     public void testBreadthFirst() {
         assertEquals("this array should bethe same as the one comes out","[10, 20, 30, 25, 35, 20, 25, 35]", BreadthFirst.breadthFirst(tree).toString());
+    }
+    @Test
+    public void breadthFirst() {
+
     }
 }

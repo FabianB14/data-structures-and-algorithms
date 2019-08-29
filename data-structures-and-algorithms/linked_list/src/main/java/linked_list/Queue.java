@@ -9,8 +9,8 @@ public class Queue <T> extends LinkedList{
         this.rear = null;
     }
 
-    public void enqueue(T value){
-        Node temp;
+
+    public void enqueue(Object value){
         Node newNode = new Node(value,null);
         if(this.front == null){
             this.front = newNode;
@@ -22,18 +22,25 @@ public class Queue <T> extends LinkedList{
         }
     }
 
-    public T dequeue(){
+    public Object dequeue(){
         Node current = this.rear;
-        T value = (T) front.value;
+        Object value =  front.value;
         while(current != null){
             if(current.next == this.front){
                 this.front = current;
                 this.front.next = null;
             }
+            else if(this.front == this.rear){
+                current = this.front;
+                this.front = null;
+                this.rear = null;
+            }
             current = current.next;
         }
         return value;
     }
+
+
 
     public T peek(){
         if(this.front == null || this.front.value == null){
@@ -47,4 +54,5 @@ public class Queue <T> extends LinkedList{
         }
         return false;
     }
+
 }

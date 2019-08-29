@@ -39,6 +39,6 @@ public class BreadthFirstTest {
     }
     @Test
     public void testBreadthFirst() {
-        assertEquals("this array should bethe same as the one comes out","10 , 20 ,30 ", BreadthFirst.breadthFirst(tree).toString());
+        assertEquals("this array should bethe same as the one comes out","[10, 20, 30, 25, 35, 20, 25, 35]", BreadthFirst.breadthFirst(tree).toString());
     }
 }

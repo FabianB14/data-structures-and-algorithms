@@ -1,23 +1,19 @@
 package breadth;
 
-import linked_list.Node;
-import linked_list.Queue;
-import linked_list.TNode;
-import linked_list.Tree;
+import linked_list.*;
 
 import java.util.ArrayList;
 
 public class BreadthFirst {
     public static ArrayList <Object> breadthFirst(Tree tree){
-
         ArrayList<Object> treeArrayList = new ArrayList<>();
-        Queue<Object> treeQueue = new Queue<>();
+        Queue treeQueue = new Queue();
         if(tree.root == null){
             return treeArrayList;
         }
-        treeQueue.enqueue(tree.root.value);
+        treeQueue.enqueue(tree.root);
         while(!treeQueue.isEmpty()){
-            TNode node = new TNode(treeQueue.dequeue());
+            TNode node = (TNode) treeQueue.dequeue();
             System.out.print(node.value + " ");
             treeArrayList.add(node.value);
             if(node.left != null) treeQueue.enqueue(node.left);

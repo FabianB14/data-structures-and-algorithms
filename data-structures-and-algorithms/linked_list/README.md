@@ -54,6 +54,14 @@ I've aslo added a add and comtains method
 Created a method  that would take the numbers divisiable by 3,5 and 3&5
 You will be able to pass a Binary Tree to fizzbuzz. Recursively fizzbuzz will replace the divisables and return the tree
 
+## Breadth First
+This is a feature that will treverse a tree using breadth first method.
+I will user the iterative process to treverse using a while loop.
+
+## Find Max in a Tree
+I go through the tree depth first to storing the max value in a max variable
+I use a main wrapper method and a helper method.
+
 Image of the white boarding process
 
 ## This is the Kth method
@@ -68,3 +76,8 @@ Image of the white boarding process
 ![](../../images/whiteboard8.jpg)
 ## This is for FizzBuzz
 ![](../../images/whiteboard9.jpg)
+## This is for Breadth First
+![](../../images/whiteboard10.jpg)
+## This is for FindMax
+![](../../images/whiteboard11.jpg)
+

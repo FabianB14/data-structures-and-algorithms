@@ -13,9 +13,12 @@ public class MergeSortTest {
         MergeSort.mergeSorter(actual, actual.length);
         assertArrayEquals(expected, actual);
 
+
         int[] actual2 = { 4, 1, 3, 2};
         int[] expected2 = { 1, 2, 3, 4 };
         MergeSort.mergeSorter(actual, actual.length);
         assertArrayEquals(expected, actual);
     }
 }
+
+

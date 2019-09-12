@@ -11,3 +11,5 @@ This is the link for the 401 challenges: [401 Challenges](https://github.com/Fab
 This is the link for the linked list lab [LinkedList Challenges](https://github.com/FabianB14/data-structures-and-algorithms/blob/master/data-structures-and-algorithms/linked_list/README.md)
 
 This is the link for the Tree Challenges [Tree Challeneges](https://github.com/FabianB14/data-structures-and-algorithms/blob/master/data-structures-and-algorithms/linked_list/README.md)
+
+This is the link for all the Sorting algorithims  [Tree Challeneges](https://github.com/FabianB14/data-structures-and-algorithms/blob/master/data-structures-and-algorithms/linked_list/README.md)

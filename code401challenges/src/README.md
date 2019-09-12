@@ -25,7 +25,7 @@ Now we will talk about the quick sort.
 
 >- **Piviot Selection** pick element as a pivot usually you would pick the leftmost or rightmost element or the array.
 >- **Partitioning** reorder the array so that all the elements greater than the element are on the right of the element and all the elements less than the element are on the left, elements that are the same value can go either way.
->-**Recur** recursively apply the above steps to the sub array with smaller values than the pivot and seperately to the sub array with greater values than the pivot.
+>- **Recur** recursively apply the above steps to the sub array with smaller values than the pivot and seperately to the sub array with greater values than the pivot.
 
 ![Quick Sort!](https://codesjava.com/wp-content/uploads/2018/04/Quicksort-codesjava.png "Quick Sort")
 image from codesjave.com

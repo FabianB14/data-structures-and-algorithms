@@ -6,6 +6,6 @@ I will go through the basics of insertsion sort.
 > - You will need to use a variablie "pivot" to keep the sorted and the unsorted seperate.
 > - Using recursion could possible decrease the difficulty.
 
-![Insertion Sort!]( https://cdncontribute.geeksforgeeks.org/wp-content/uploads/insertionsort.png"Insertion Sort")
+![Insertion Sort!]( https://cdncontribute.geeksforgeeks.org/wp-content/uploads/insertionsort.png "Insertion Sort")
 
 
